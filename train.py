@@ -133,7 +133,7 @@ with tf.Session() as sess:
                 print 'batch : {}, loss: {}'.format(i,loss_value)
 
         loss_value = sess.run(loss_function, feed_dict = feed)
-        print 'epoch: {}, loss: {}'.format(step, loss_value)
+        print 'epoch: {}, loss: {}'.format(epoch, loss_value)
         losses.append(loss_value)
         if loss_value < loss :
             loss = loss_value
